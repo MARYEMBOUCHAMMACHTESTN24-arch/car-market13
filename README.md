@@ -16,67 +16,22 @@
 
 ## 📖 Project Overview
 
-**Car Market** is a comprehensive car marketplace web application that allows users to browse, search, and purchase vehicles online. It features a role-based access system with distinct dashboards for clients, managers, and administrators, along with an integrated AI-powered recommendation engine.
-
-This project was developed as a Final Year Project (Projet de Fin d'Études — PFE), demonstrating mastery of modern full-stack web development.
+**Car Market** is a comprehensive car marketplace web application developed as a Final Year Project (PFE). It allows users to browse, search, and purchase vehicles online, featuring a role-based access system and an integrated AI-powered recommendation engine.
 
 ## ✨ Main Features
 
-- **Client Experience:** Browse vehicles with advanced filters, view detailed galleries, place orders, and receive AI-powered car recommendations.
-- **Manager Tools:** Dedicated dashboard to view cars, orders, client records, and manage contact requests.
-- **Admin Control:** Full CRUD management of inventory, user roles, order workflows, and business analytics.
-- **AI Integration:** Personalized car suggestions via a Python FastAPI recommendation service.
-- **Multi-language Support:** Available in English, French, and Arabic.
-
-## 🏗️ Architecture
-
-The platform uses a hybrid microservices architecture:
-- **React Frontend (Vite):** The main user interface.
-- **Next.js API (V2):** Modern data layer using Prisma ORM.
-- **Laravel Backend (V1):** Legacy API and administrative logic.
-- **FastAPI Engine:** AI recommendation service.
-- **MySQL Database:** Centralized data storage.
+- **Advanced Browsing:** Search and filter vehicles with detailed galleries and specifications.
+- **Role-Based Access:** Distinct dashboards for clients, managers, and administrators.
+- **Order Management:** Place, track, and manage vehicle orders seamlessly.
+- **AI Recommendations:** Personalized car suggestions powered by a Python FastAPI engine.
+- **Multi-language Support:** Interface available in English, French, and Arabic.
 
 ## 🛠️ Technologies Used
 
-- **Frontend:** React 19, Vite, Tailwind CSS, React Router, i18next
-- **Backend APIs:** Laravel 12, Next.js 15, Prisma ORM
-- **AI Service:** Python 3.11+, FastAPI
+- **Frontend:** React 19, Vite, Tailwind CSS
+- **Backend:** Laravel 12, Next.js 15, Prisma ORM
+- **AI Engine:** Python 3.11+, FastAPI
 - **Database:** MySQL 8.0
-
-## ⚙️ Quick Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/MARYEMBOUCHAMMACHTESTN24-arch/car-market13.git
-   cd car-market13
-   ```
-
-2. **Start Laravel Backend:**
-   ```bash
-   cd car-market-backend
-   composer install
-   cp .env.example .env
-   php artisan key:generate
-   php artisan migrate --seed
-   php artisan serve --port=8000
-   ```
-
-3. **Start Next.js API:**
-   ```bash
-   cd ..
-   npm install
-   npx next dev -p 3000
-   ```
-
-4. **Start React Frontend:**
-   ```bash
-   cd car-market-frontend
-   npm install
-   npm run dev
-   ```
-
-*(Optional: The Python AI Engine can be started in `ai-engine/` using `uvicorn app:app --port 9002 --reload`)*
 
 ## 👩‍💻 Author
 
