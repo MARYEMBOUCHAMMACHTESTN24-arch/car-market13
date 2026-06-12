@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Cache</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; max-width: 600px; margin: 0 auto; }
+        button { padding: 15px 30px; font-size: 16px; cursor: pointer; background: #2563eb; color: white; border: none; border-radius: 8px; }
+        .success { color: green; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Clear Application Cache</h1>
+    <p>Click the button below to clear all cached user data and permissions:</p>
+    <button onclick="clearCache()">Clear Cache & Logout</button>
+    <div id="result"></div>
+    
+    <script>
+        function clearCache() {
+            localStorage.removeItem('user');
+            localStorage.removeItem('token');
+            localStorage.removeItem('role');
+            localStorage.removeItem('permissions');
+            document.getElementById('result').innerHTML = 
+                '<p class="success">✅ Cache cleared! Redirecting to login...</p>';
+            setTimeout(() => {
+                window.location.href = '/login';
+            }, 1500);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════
+   AutoMark Official Brand CSS Variables
+   Primary:    #D32F2F
+   BG Dark:    #111827
+   Surface:    #1F2937
+   Border:     #374151
+   Text White: #FFFFFF
+   Text Gray:  #D1D5DB
+   ═══════════════════════════════════════════════════════ */
+:root {
+  --am-red:        #D32F2F;
+  --am-red-dark:   #B71C1C;
+  --am-red-light:  #EF5350;
+  --am-bg:         #111827;
+  --am-surface:    #1F2937;
+  --am-border:     #374151;
+  --am-white:      #FFFFFF;
+  --am-gray:       #D1D5DB;
+  --am-muted:      #9CA3AF;
+
+  /* scrollbar */
+  --scrollbar-track: #1F2937;
+  --scrollbar-thumb: #374151;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply text-gray-800 antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  /* ─── Buttons ─── */
+  .btn-primary {
+    @apply font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-white;
+    background-color: var(--am-red);
+    box-shadow: 0 4px 24px rgba(211,47,47,0.35);
+  }
+  .btn-primary:hover {
+    background-color: var(--am-red-dark);
+  }
+
+  .btn-secondary {
+    @apply font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl text-white;
+    background-color: var(--am-surface);
+    border: 1px solid var(--am-border);
+  }
+  .btn-secondary:hover {
+    background-color: var(--am-border);
+  }
+
+  .btn-outline {
+    @apply font-semibold py-3 px-8 rounded-xl transition-all duration-300;
+    border: 2px solid var(--am-red);
+    color: var(--am-red);
+  }
+  .btn-outline:hover {
+    background-color: var(--am-red);
+    color: var(--am-white);
+  }
+
+  .btn-ghost {
+    @apply font-semibold py-3 px-6 rounded-xl transition-all duration-300 backdrop-blur-sm;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--am-white);
+  }
+  .btn-ghost:hover {
+    background: rgba(255,255,255,0.15);
+  }
+
+  /* ─── Cards ─── */
+  .card {
+    @apply bg-white rounded-2xl transition-all duration-300 overflow-hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  }
+
+  .card-dark {
+    @apply rounded-2xl transition-all duration-300 overflow-hidden;
+    background-color: var(--am-surface);
+    border: 1px solid var(--am-border);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  .card-dark:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  }
+
+  .card-hover {
+    @apply transform hover:-translate-y-2 transition-all duration-300;
+  }
+
+  /* ─── Typography ─── */
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold font-heading;
+    color: #111827;
+  }
+  .section-subtitle {
+    @apply mt-2 text-lg;
+    color: var(--am-muted);
+  }
+
+  /* ─── Inputs ─── */
+  .input-field {
+    @apply w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none transition-all duration-200 text-gray-900 placeholder-gray-400;
+    focus-ring: 2px solid var(--am-red);
+  }
+  .input-field:focus {
+    border-color: var(--am-red);
+    box-shadow: 0 0 0 3px rgba(211,47,47,0.15);
+  }
+
+  .input-field-dark {
+    @apply w-full px-5 py-4 rounded-xl focus:outline-none transition-all duration-200 placeholder-gray-500;
+    background-color: var(--am-bg);
+    border: 1px solid var(--am-border);
+    color: var(--am-white);
+  }
+  .input-field-dark:focus {
+    border-color: var(--am-red);
+    box-shadow: 0 0 0 3px rgba(211,47,47,0.15);
+  }
+
+  .filter-select {
+    @apply w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:outline-none appearance-none cursor-pointer text-gray-700 font-medium shadow-sm;
+  }
+  .filter-select:focus {
+    border-color: var(--am-red);
+    box-shadow: 0 0 0 3px rgba(211,47,47,0.15);
+  }
+
+  /* ─── Badges ─── */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
+  }
+  .badge-red {
+    background-color: rgba(211,47,47,0.12);
+    color: var(--am-red);
+  }
+  .badge-green {
+    @apply bg-green-100 text-green-600;
+  }
+  .badge-blue {
+    @apply bg-blue-100 text-blue-600;
+  }
+  .badge-yellow {
+    @apply bg-yellow-100 text-yellow-600;
+  }
+
+  /* ─── Prices ─── */
+  .price {
+    @apply text-2xl font-black font-heading;
+    color: var(--am-red);
+  }
+  .price-large {
+    @apply text-3xl font-black font-heading;
+    color: var(--am-red);
+  }
+
+  /* ─── Admin / Dashboard surfaces ─── */
+  .am-sidebar {
+    background-color: var(--am-bg);
+    border-right: 1px solid var(--am-border);
+  }
+  .am-header {
+    background-color: var(--am-bg);
+    border-bottom: 1px solid var(--am-border);
+  }
+  .am-card {
+    background-color: var(--am-surface);
+    border: 1px solid var(--am-border);
+    border-radius: 1rem;
+  }
+  .am-text {
+    color: var(--am-white);
+  }
+  .am-text-muted {
+    color: var(--am-gray);
+  }
+  .am-active {
+    background-color: var(--am-red);
+    color: var(--am-white);
+    box-shadow: 0 4px 16px rgba(211,47,47,0.3);
+  }
+}
+
+/* ─── Custom Scrollbar ─── */
+::-webkit-scrollbar        { width: 8px; }
+::-webkit-scrollbar-track  { background: var(--am-surface); }
+::-webkit-scrollbar-thumb  { background: var(--am-border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--am-muted); }
+
+.custom-scrollbar::-webkit-scrollbar        { width: 6px; }
+.custom-scrollbar::-webkit-scrollbar-track  { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb  { background: var(--am-border); border-radius: 3px; }
+
+/* ─── Page Transitions ─── */
+.page-enter { animation: fadeInUp 0.5s ease-out; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Shimmer Loading ─── */
+.shimmer {
+  background: linear-gradient(90deg, var(--am-surface) 25%, var(--am-border) 50%, var(--am-surface) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ─── Animation utilities ─── */
+@layer utilities {
+  .animate-fade-in      { animation: fadeIn 0.3s ease-out; }
+  .animate-fade-in-up   { animation: fadeInUp 0.4s ease-out; }
+  .animate-scale-in     { animation: scaleIn 0.3s ease-out; }
+  .animate-slide-in-left{ animation: slideInLeft 0.4s ease-out; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ─── Client Dashboard Light Theme ─── */
+.client-dashboard-shell,
+.client-dashboard-shell * {
+  transition-property: background-color, border-color, color, transform, width, box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+.dashboard-light {
+  background-color: #f6f8fb !important;
+  color: #334155 !important;
+}
+
+.dashboard-light [class*="bg-[#11131a]"],
+.dashboard-light [class*="bg-[#161821]"],
+.dashboard-light [class*="bg-[#1b1e2a]"],
+.dashboard-light [class*="bg-[#1a1c26]"],
+.dashboard-light [class*="bg-[#1e202d]"],
+.dashboard-light [class*="bg-[#232736]"],
+.dashboard-light [class*="bg-[#111827]"],
+.dashboard-light [class*="bg-[#0B0F19]"],
+.dashboard-light [class*="bg-[#1F2937]"],
+.dashboard-light [class*="bg-slate-800"],
+.dashboard-light [class*="bg-slate-900"] {
+  background-color: #ffffff !important;
+}
+
+.dashboard-light .bg-gradient-to-br,
+.dashboard-light .bg-gradient-to-r {
+  background-image: none !important;
+  background-color: #ffffff !important;
+}
+
+.dashboard-light [class*="border-slate-800"],
+.dashboard-light [class*="border-slate-700"],
+.dashboard-light [class*="border-white/5"],
+.dashboard-light [class*="border-[#374151]"] {
+  border-color: #dbe4ef !important;
+}
+
+.dashboard-light [class*="text-white"],
+.dashboard-light [class*="text-slate-200"],
+.dashboard-light [class*="text-slate-300"] {
+  color: #0f172a !important;
+}
+
+.dashboard-light [class*="text-slate-400"],
+.dashboard-light [class*="text-slate-500"],
+.dashboard-light [class*="text-slate-600"] {
+  color: #64748b !important;
+}
+
+.dashboard-light input,
+.dashboard-light textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #dbe4ef !important;
+}
+
+.dashboard-light input::placeholder,
+.dashboard-light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+.dashboard-light .bg-red-600,
+.dashboard-light .bg-emerald-600,
+.dashboard-light .bg-red-600 *,
+.dashboard-light .bg-emerald-600 * {
+  color: #ffffff !important;
+}
+
+.dashboard-light .custom-scrollbar::-webkit-scrollbar-track {
+  background: #f6f8fb !important;
+}
+.dashboard-light .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1 !important;
+}

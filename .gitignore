@@ -1,0 +1,45 @@
+# ── Node / Next.js ──────────────────────────────────────────────────
+node_modules/
+.next/
+dist/
+build/
+
+# ── Environment & secrets ────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Log files (root and sub-projects) ───────────────────────────────
+*.log
+*.out.log
+*.err.log
+*.job.log
+
+# ── Python AI engine ────────────────────────────────────────────────
+ai-engine/.venv/
+ai-engine/venv/
+ai-engine/__pycache__/
+ai-engine/models/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# ── PHP / Laravel backend ────────────────────────────────────────────
+car-market-backend/vendor/
+car-market-backend/storage/framework/cache/
+car-market-backend/storage/framework/sessions/
+car-market-backend/storage/framework/views/
+car-market-backend/storage/logs/
+car-market-backend/.phpunit.result.cache
+car-market-backend/bootstrap/cache/
+
+# ── Frontend sub-project ─────────────────────────────────────────────
+car-market-frontend/node_modules/
+car-market-frontend/dist/
+
+# ── OS / editor artifacts ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Dealer | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top info bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span>10:00 AM To 5:00 PM</span>
+        <span class="dot"></span>
+        <span>support@cardealer.com</span>
+      </div>
+      <div class="topbar-right">
+        <span>(007) 123 456 7890</span>
+        <a href="#" class="top-link">Login</a>
+        <a href="#" class="top-link cta-small">Add Car</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main navigation + hero -->
+  <div class="hero">
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <div class="logo">
+          <span class="logo-main">CAR</span><span class="logo-sub">DEALER</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#" class="nav-link">Pages</a></li>
+          <li><a href="#" class="nav-link">Blog</a></li>
+          <li><a href="#" class="nav-link">Cars</a></li>
+          <li><a href="#" class="nav-link">Car Details</a></li>
+          <li><a href="#" class="nav-link">Shop</a></li>
+        </ul>
+        <button class="btn btn-outline">Add Car</button>
+      </div>
+    </nav>
+
+    <section class="hero-content container">
+      <p class="eyebrow">WELCOME TO THE MOST STUNNING</p>
+      <h1 class="hero-title">CAR DEALER WEBSITE</h1>
+      <p class="hero-subtitle">
+        Discover the latest models, compare prices, and book your dream car in minutes.
+      </p>
+      <div class="hero-actions">
+        <button class="btn btn-primary">Browse Cars</button>
+        <button class="btn btn-ghost">Sell Your Car</button>
+      </div>
+
+      <div class="hero-cars">
+        <!-- Replace src with your real car images -->
+        <div class="car-card car-card-red">
+          <div class="car-gradient"></div>
+          <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Red sports car" />
+        </div>
+        <div class="car-card car-card-blue">
+          <div class="car-gradient"></div>
+          <img src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Blue luxury car" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Feature strip -->
+  <section class="features">
+    <div class="container features-inner">
+      <div class="feature">
+        <h3>Huge Inventory</h3>
+        <p>Hundreds of new and used cars from trusted dealers.</p>
+      </div>
+      <div class="feature">
+        <h3>Best Price</h3>
+        <p>Transparent pricing with no hidden fees or surprises.</p>
+      </div>
+      <div class="feature">
+        <h3>Easy Financing</h3>
+        <p>Flexible plans tailored to your budget and lifestyle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Car Dealer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Market - Find Your Dream Car</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+      .hero-bg {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=1600");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-950 text-white">
+    <!-- Page wrapper -->
+    <div class="min-h-screen flex flex-col">
+      <!-- Header / Nav -->
+      <header
+        class="sticky top-0 z-40 border-b border-white/5 bg-neutral-950/80 backdrop-blur-xl"
+      >
+        <div
+          class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-0"
+        >
+          <a href="/" class="flex items-center gap-2">
+            <span
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-red-600 text-sm font-bold shadow-lg shadow-red-600/40"
+            >
+              CM
+            </span>
+            <div class="flex flex-col">
+              <span class="text-sm font-semibold tracking-wide uppercase"
+                >Car Market</span
+              >
+              <span class="text-xs text-neutral-400"
+                >Premium Car Marketplace</span
+              >
+            </div>
+          </a>
+
+          <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
+            <a href="#" class="text-red-500">Home</a>
+            <a
+              href="/cars"
+              class="text-neutral-300 transition hover:text-white"
+              >Cars</a
+            >
+            <a
+              href="/contact"
+              class="text-neutral-300 transition hover:text-white"
+              >Contact</a
+            >
+          </nav>
+
+          <a
+            href="/cars"
+            class="hidden rounded-full bg-red-600 px-5 py-2.5 text-sm font-semibold shadow-lg shadow-red-600/40 transition hover:bg-red-500 md:inline-flex"
+          >
+            View All Cars
+          </a>
+
+          <button
+            class="inline-flex items-center justify-center rounded-full border border-white/10 p-2 text-neutral-200 md:hidden"
+            aria-label="Open navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main content -->
+      <main class="flex-1">
+        <!-- HERO SECTION -->
+        <section class="hero-bg border-b border-white/10">
+          <div
+            class="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-16 lg:flex-row lg:items-center lg:py-24 lg:px-0"
+          >
+            <div class="w-full lg:w-1/2">
+              <p
+                class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/40 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-neutral-300"
+              >
+                Premium Marketplace
+                <span class="h-1.5 w-1.5 rounded-full bg-red-500"></span>
+                Buy & Request Cars بسهولة
+              </p>
+
+              <h1
+                class="text-balance text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+              >
+                Find Your
+                <span class="text-red-500">Dream Car</span>
+                Today
+              </h1>
+
+              <p
+                class="mt-4 max-w-xl text-sm text-neutral-200 sm:text-base sm:leading-relaxed"
+              >
+                Discover a modern car marketplace where you can search, compare,
+                and request your next vehicle
+                <span class="font-semibold">بسهولة</span>. Browse verified
+                listings, explore details, and send purchase requests directly
+                to the admin.
+              </p>
+
+              <!-- Search bar -->
+              <div
+                class="mt-8 rounded-2xl bg-black/60 p-4 shadow-2xl shadow-black/60 ring-1 ring-white/10 backdrop-blur"
+              >
+                <p class="mb-3 text-xs font-medium uppercase text-neutral-300">
+                  Smart Search
+                </p>
+                <form
+                  class="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center"
+                >
+                  <div class="flex-1 min-w-[160px]">
+                    <label
+                      class="mb-1 block text-xs font-medium text-neutral-300"
+                    >
+                      Brand
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Toyota, BMW, Mercedes..."
+                      class="w-full rounded-xl border border-white/10 bg-neutral-900/70 px-3 py-2 text-sm text-white placeholder:text-neutral-500 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"
+                    />
+                  </div>
+
+                  <div class="flex-1 min-w-[160px]">
+                    <label
+                      class="mb-1 block text-xs font-medium text-neutral-300"
+                    >
+                      City
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Dubai, Riyadh, Cairo..."
+                      class="w-full rounded-xl border border-white/10 bg-neutral-900/70 px-3 py-2 text-sm text-white placeholder:text-neutral-500 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"
+                    />
+                  </div>
+
+                  <div class="flex-1 min-w-[160px]">
+                    <label
+                      class="mb-1 block text-xs font-medium text-neutral-300"
+                    >
+                      Max Price
+                    </label>
+                    <select
+                      class="w-full rounded-xl border border-white/10 bg-neutral-900/70 px-3 py-2 text-sm text-white focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"
+                    >
+                      <option value="">Any</option>
+                      <option value="20000">Up to $20,000</option>
+                      <option value="40000">Up to $40,000</option>
+                      <option value="60000">Up to $60,000</option>
+                      <option value="80000">Up to $80,000</option>
+                      <option value="100000">Up to $100,000</option>
+                    </select>
+                  </div>
+
+                  <div class="flex w-full items-end sm:w-auto">
+                    <button
+                      type="submit"
+                      class="inline-flex w-full items-center justify-center rounded-xl bg-red-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-red-600/50 transition hover:bg-red-500 sm:w-auto"
+                    >
+                      Search Cars
+                    </button>
+                  </div>
+                </form>
+
+                <p class="mt-3 text-xs text-neutral-400">
+                  Advanced filters and real-time results coming soon.
+                </p>
+              </div>
+
+              <!-- CTA buttons -->
+              <div
+                class="mt-6 flex flex-col gap-3 text-sm sm:flex-row sm:items-center"
+              >
+                <a
+                  href="/cars"
+                  class="inline-flex items-center justify-center rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-black shadow-lg shadow-white/20 transition hover:bg-neutral-100"
+                >
+                  View Featured Cars
+                </a>
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center text-sm font-medium text-neutral-200 hover:text-white"
+                >
+                  Learn more about our platform
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ml-1.5 h-4 w-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 4.293a1 1 0 011.414 0L13 10.586V7a1 1 0 112 0v6a1 1 0 01-1 1H8a1 1 0 110-2h3.586L4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Hero side stats -->
+            <div
+              class="w-full space-y-4 lg:w-1/2 lg:pl-10 xl:pl-16"
+            >
+              <div
+                class="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:gap-4"
+              >
+                <div
+                  class="rounded-2xl border border-white/10 bg-black/40 p-4 shadow-lg shadow-black/60"
+                >
+                  <p
+                    class="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-400"
+                  >
+                    Listings
+                  </p>
+                  <p class="mt-2 text-3xl font-semibold text-white">
+                    2,500+
+                  </p>
+                  <p class="mt-1 text-xs text-neutral-400">
+                    New and used cars from trusted sellers.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-2xl border border-white/10 bg-black/40 p-4 shadow-lg shadow-black/60"
+                >
+                  <p
+                    class="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-400"
+                  >
+                    Response Time
+                  </p>
+                  <p class="mt-2 text-3xl font-semibold text-white">
+                    &lt; 24h
+                  </p>
+                  <p class="mt-1 text-xs text-neutral-400">
+                    Admin reviews and approves your requests quickly.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-2xl border border-white/10 bg-black/40 p-4 shadow-lg shadow-black/60 sm:col-span-2"
+                >
+                  <p
+                    class="text-xs font-semibold uppercase tracking-[0.22em] text-neutral-400"
+                  >
+                    How it works
+                  </p>
+                  <p class="mt-2 text-sm text-neutral-200">
+                    Search by brand, price and city →
+                    <span class="text-white font-semibold">select your car</span>
+                    →
+                    <span class="text-white font-semibold">send a request</span>
+                    →
+                    admin reviews and approves your purchase.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="border-b border-white/10 bg-neutral-950">
+          <div
+            class="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:px-0"
+          >
+            <div>
+              <h2
+                class="text-sm font-semibold uppercase tracking-[0.22em] text-red-500"
+              >
+                About Our Platform
+              </h2>
+              <p
+                class="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl"
+              >
+                A modern way to discover and request your next car.
+              </p>
+              <p class="mt-4 text-sm text-neutral-300 sm:text-base">
+                This platform allows users to search, compare and request cars
+                <span class="font-semibold">بسهولة</span>. Users can browse a
+                curated selection of vehicles, view detailed information, and
+                send purchase requests directly to the admin for approval.
+              </p>
+              <p class="mt-3 text-sm text-neutral-400 sm:text-base">
+                Our goal is to deliver a seamless automotive experience that
+                combines professional design with a simple and intuitive
+                workflow, from the first search to final approval.
+              </p>
+            </div>
+
+            <div
+              class="space-y-4 rounded-2xl border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-5 shadow-xl shadow-black/70"
+            >
+              <div class="flex items-start gap-3">
+                <span
+                  class="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-full bg-red-600/90 text-xs font-semibold"
+                  >1</span
+                >
+                <div>
+                  <p class="text-sm font-semibold text-white">
+                    Search & Compare
+                  </p>
+                  <p class="mt-1 text-xs text-neutral-400">
+                    Filter cars by brand, city and price to find options that
+                    match your needs and budget.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span
+                  class="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-full bg-red-600/90 text-xs font-semibold"
+                  >2</span
+                >
+                <div>
+                  <p class="text-sm font-semibold text-white">
+                    Explore Details
+                  </p>
+                  <p class="mt-1 text-xs text-neutral-400">
+                    View high-quality images, pricing, location and key specs
+                    for each car in one place.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span
+                  class="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-full bg-red-600/90 text-xs font-semibold"
+                  >3</span
+                >
+                <div>
+                  <p class="text-sm font-semibold text-white">
+                    Send a Request
+                  </p>
+                  <p class="mt-1 text-xs text-neutral-400">
+                    Submit a purchase request مباشرة عبر النظام. The admin
+                    reviews and responds to you.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span
+                  class="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-full bg-red-600/90 text-xs font-semibold"
+                  >4</span
+                >
+                <div>
+                  <p class="text-sm font-semibold text-white">
+                    Secure & Organized
+                  </p>
+                  <p class="mt-1 text-xs text-neutral-400">
+                    All requests are centralized with the admin, keeping the
+                    process professional and transparent.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="border-b border-white/10 bg-neutral-950">
+          <div class="mx-auto max-w-6xl px-4 py-14 lg:px-0">
+            <div class="max-w-2xl">
+              <h2
+                class="text-sm font-semibold uppercase tracking-[0.22em] text-red-500"
+              >
+                Why Choose Us
+              </h2>
+              <p
+                class="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl"
+              >
+                Built for serious car buyers and sellers.
+              </p>
+              <p class="mt-3 text-sm text-neutral-300 sm:text-base">
+                We designed this marketplace to deliver a clean, modern
+                experience that feels familiar to top automotive websites while
+                staying focused on what matters: helping you find the right car
+                quickly and safely.
+              </p>
+            </div>
+
+            <div
+              class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4"
+            >
+              <div
+                class="flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-5 shadow-lg shadow-black/60"
+              >
+                <div
+                  class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-red-600/90 text-white shadow-md shadow-red-600/40"
+                >
+                  <!-- Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0L16.5 16.5m-2.25-2.25l1.409-1.409a2.25 2.25 0 013.182 0L21.75 15.75M4.5 19.5h15"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-sm font-semibold text-white">
+                  Large selection of cars
+                </h3>
+                <p class="mt-2 text-xs text-neutral-400">
+                  Explore different brands, models and categories in one
+                  centralized marketplace.
+                </p>
+              </div>
+
+              <div
+                class="flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-5 shadow-lg shadow-black/60"
+              >
+                <div
+                  class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-red-600/90 text-white shadow-md shadow-red-600/40"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M12 6v12m6-6H6"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-sm font-semibold text-white">
+                  Easy and fast process
+                </h3>
+                <p class="mt-2 text-xs text-neutral-400">
+                  A simple flow from search to request, designed to save your
+                  time.
+                </p>
+              </div>
+
+              <div
+                class="flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-5 shadow-lg shadow-black/60"
+              >
+                <div
+                  class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-red-600/90 text-white shadow-md shadow-red-600/40"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-sm font-semibold text-white">
+                  Trusted platform
+                </h3>
+                <p class="mt-2 text-xs text-neutral-400">
+                  Centralized admin control ensures consistency and protects
+                  both buyers and sellers.
+                </p>
+              </div>
+
+              <div
+                class="flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-5 shadow-lg shadow-black/60"
+              >
+                <div
+                  class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-red-600/90 text-white shadow-md shadow-red-600/40"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M12 15l-3.5 2.06a1 1 0 01-1.5-.866V9.806a1 1 0 01.5-.866L12 7l3.5 1.94a1 1 0 01.5.866v6.388a1 1 0 01-1.5.866L12 15z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-sm font-semibold text-white">
+                  Secure requests
+                </h3>
+                <p class="mt-2 text-xs text-neutral-400">
+                  Requests are stored safely and only accessible by the
+                  platform's admin.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FEATURED CARS -->
+        <section class="border-b border-white/10 bg-neutral-950">
+          <div class="mx-auto max-w-6xl px-4 py-14 lg:px-0">
+            <div
+              class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"
+            >
+              <div>
+                <h2
+                  class="text-sm font-semibold uppercase tracking-[0.22em] text-red-500"
+                >
+                  Featured Cars
+                </h2>
+                <p
+                  class="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl"
+                >
+                  Handpicked vehicles ready for you.
+                </p>
+                <p class="mt-3 text-sm text-neutral-300 sm:text-base">
+                  Discover a snapshot of available cars. Click "View Details" to
+                  explore each listing, or jump to the full catalog.
+                </p>
+              </div>
+              <a
+                href="/cars"
+                class="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-white hover:border-red-500 hover:text-red-400"
+              >
+                View All Cars
+              </a>
+            </div>
+
+            <div
+              class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              <!-- Car card 1 -->
+              <article
+                class="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-neutral-900 to-black shadow-xl shadow-black/70"
+              >
+                <div class="relative overflow-hidden">
+                  <img
+                    src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Sport sedan"
+                    class="h-44 w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80"
+                  ></div>
+                  <div class="absolute bottom-3 left-3 right-3 flex justify-between">
+                    <span
+                      class="rounded-full bg-black/70 px-3 py-1 text-xs font-medium text-white backdrop-blur"
+                    >
+                      2022
+                    </span>
+                    <span
+                      class="rounded-full bg-red-600/90 px-3 py-1 text-xs font-semibold text-white shadow-lg shadow-red-600/40 backdrop-blur"
+                    >
+                      Featured
+                    </span>
+                  </div>
+                </div>
+                <div class="flex flex-1 flex-col p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <h3 class="text-sm font-semibold text-white">
+                        BMW 3 Series M Sport
+                      </h3>
+                      <p class="mt-1 text-xs text-neutral-400">
+                        Dubai • Automatic • Petrol
+                      </p>
+                    </div>
+                    <p class="text-right text-sm font-semibold text-red-400">
+                      $48,900
+                    </p>
+                  </div>
+
+                  <div class="mt-3 flex items-center gap-2 text-[11px] text-neutral-400">
+                    <span
+                      class="inline-flex items-center gap-1 rounded-full bg-white/5 px-2 py-1"
+                    >
+                      <span class="h-1.5 w-1.5 rounded-full bg-green-400"></span>
+                      Available
+                    </span>
+                    <span>28,000 km</span>
+                  </div>
+
+                  <div class="mt-4 flex items-center justify-between">
+                    <button
+                      class="inline-flex items-center text-xs font-medium text-red-400 hover:text-red-300"
+                    >
+                      View Details
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ml-1.5 h-3.5 w-3.5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 4.293a1 1 0 011.414 0L13 10.586V7a1 1 0 112 0v6a1 1 0 01-1 1H8a1 1 0 110-2h3.586L4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <span class="text-[11px] text-neutral-500">
+                      City: Dubai
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Car card 2 -->
+              <article
+                class="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-neutral-900 to-black shadow-xl shadow-black/70"
+              >
+                <div class="relative overflow-hidden">
+                  <img
+                    src="https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Luxury SUV"
+                    class="h-44 w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80"
+                  ></div>
+                  <div class="absolute bottom-3 left-3 right-3 flex justify-between">
+                    <span
+                      class="rounded-full bg-black/70 px-3 py-1 text-xs font-medium text-white backdrop-blur"
+                    >
+                      2021
+                    </span>
+                    <span
+                      class="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white backdrop-blur"
+                    >
+                      Low mileage
+                    </span>
+                  </div>
+                </div>
+                <div class="flex flex-1 flex-col p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <h3 class="text-sm font-semibold text-white">
+                        Range Rover Sport HSE
+                      </h3>
+                      <p class="mt-1 text-xs text-neutral-400">
+                        Riyadh • Automatic • Petrol
+                      </p>
+                    </div>
+                    <p class="text-right text-sm font-semibold text-red-400">
+                      $92,300
+                    </p>
+                  </div>
+
+                  <div class="mt-3 flex items-center gap-2 text-[11px] text-neutral-400">
+                    <span
+                      class="inline-flex items-center gap-1 rounded-full bg-white/5 px-2 py-1"
+                    >
+                      <span class="h-1.5 w-1.5 rounded-full bg-yellow-400"></span>
+                      On request
+                    </span>
+                    <span>18,500 km</span>
+                  </div>
+
+                  <div class="mt-4 flex items-center justify-between">
+                    <button
+                      class="inline-flex items-center text-xs font-medium text-red-400 hover:text-red-300"
+                    >
+                      View Details
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ml-1.5 h-3.5 w-3.5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 4.293a1 1 0 011.414 0L13 10.586V7a1 1 0 112 0v6a1 1 0 01-1 1H8a1 1 0 110-2h3.586L4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <span class="text-[11px] text-neutral-500">
+                      City: Riyadh
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Car card 3 -->
+              <article
+                class="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-neutral-900 to-black shadow-xl shadow-black/70"
+              >
+                <div class="relative overflow-hidden">
+                  <img
+                    src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Electric car"
+                    class="h-44 w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80"
+                  ></div>
+                  <div class="absolute bottom-3 left-3 right-3 flex justify-between">
+                    <span
+                      class="rounded-full bg-black/70 px-3 py-1 text-xs font-medium text-white backdrop-blur"
+                    >
+                      2023
+                    </span>
+                    <span
+                      class="rounded-full bg-green-500/90 px-3 py-1 text-xs font-semibold text-white shadow-lg shadow-green-500/40 backdrop-blur"
+                    >
+                      Electric
+                    </span>
+                  </div>
+                </div>
+                <div class="flex flex-1 flex-col p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <h3 class="text-sm font-semibold text-white">
+                        Tesla Model 3 Performance
+                      </h3>
+                      <p class="mt-1 text-xs text-neutral-400">
+                        Cairo • Automatic • Electric
+                      </p>
+                    </div>
+                    <p class="text-right text-sm font-semibold text-red-400">
+                      $58,700
+                    </p>
+                  </div>
+
+                  <div class="mt-3 flex items-center gap-2 text-[11px] text-neutral-400">
+                    <span
+                      class="inline-flex items-center gap-1 rounded-full bg-white/5 px-2 py-1"
+                    >
+                      <span class="h-1.5 w-1.5 rounded-full bg-green-400"></span>
+                      Available
+                    </span>
+                    <span>12,000 km</span>
+                  </div>
+
+                  <div class="mt-4 flex items-center justify-between">
+                    <button
+                      class="inline-flex items-center text-xs font-medium text-red-400 hover:text-red-300"
+                    >
+                      View Details
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ml-1.5 h-3.5 w-3.5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 4.293a1 1 0 011.414 0L13 10.586V7a1 1 0 112 0v6a1 1 0 01-1 1H8a1 1 0 110-2h3.586L4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <span class="text-[11px] text-neutral-500">
+                      City: Cairo
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Car card 4 -->
+              <article
+                class="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-neutral-900 to-black shadow-xl shadow-black/70"
+              >
+                <div class="relative overflow-hidden">
+                  <img
+                    src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    alt="Compact hatchback"
+                    class="h-44 w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80"
+                  ></div>
+                  <div class="absolute bottom-3 left-3 right-3 flex justify-between">
+                    <span
+                      class="rounded-full bg-black/70 px-3 py-1 text-xs font-medium text-white backdrop-blur"
+                    >
+                      2019
+                    </span>
+                    <span
+                      class="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white backdrop-blur"
+                    >
+                      Budget friendly
+                    </span>
+                  </div>
+                </div>
+                <div class="flex flex-1 flex-col p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <h3 class="text-sm font-semibold text-white">
+                        Toyota Yaris Hatchback
+                      </h3>
+                      <p class="mt-1 text-xs text-neutral-400">
+                        Jeddah • Automatic • Petrol
+                      </p>
+                    </div>
+                    <p class="text-right text-sm font-semibold text-red-400">
+                      $16,800
+                    </p>
+                  </div>
+
+                  <div class="mt-3 flex items-center gap-2 text-[11px] text-neutral-400">
+                    <span
+                      class="inline-flex items-center gap-1 rounded-full bg-white/5 px-2 py-1"
+                    >
+                      <span class="h-1.5 w-1.5 rounded-full bg-green-400"></span>
+                      Available
+                    </span>
+                    <span>45,000 km</span>
+                  </div>
+
+                  <div class="mt-4 flex items-center justify-between">
+                    <button
+                      class="inline-flex items-center text-xs font-medium text-red-400 hover:text-red-300"
+                    >
+                      View Details
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="ml-1.5 h-3.5 w-3.5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 4.293a1 1 0 011.414 0L13 10.586V7a1 1 0 112 0v6a1 1 0 01-1 1H8a1 1 0 110-2h3.586L4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <span class="text-[11px] text-neutral-500">
+                      City: Jeddah
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- VIEW MORE BUTTON -->
+            <div class="mt-8 flex justify-center">
+              <a
+                href="/cars"
+                class="inline-flex items-center justify-center rounded-full bg-red-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-red-600/40 transition hover:bg-red-500"
+              >
+                View All Cars
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- WEBSITE INFO / HOW IT WORKS SECTION -->
+        <section class="border-b border-white/10 bg-gradient-to-b from-black to-neutral-950">
+          <div class="mx-auto max-w-6xl px-4 py-14 lg:px-0">
+            <div class="max-w-2xl">
+              <h2
+                class="text-sm font-semibold uppercase tracking-[0.22em] text-red-500"
+              >
+                How the System Works
+              </h2>
+              <p
+                class="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl"
+              >
+                From search to admin approval in a clear, guided flow.
+              </p>
+              <p class="mt-3 text-sm text-neutral-300 sm:text-base">
+                The platform is built around a simple process that keeps buyers
+                informed and admins in control of every step.
+              </p>
+            </div>
+
+            <div
+              class="mt-8 grid gap-6 md:grid-cols-4"
+            >
+              <div
+                class="flex flex-col items-start rounded-2xl border border-white/10 bg-black/60 p-5 shadow-lg shadow-black/60"
+              >
+                <span
+                  class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-red-600/90 text-xs font-semibold"
+                  >1</span
+                >
+                <h3 class="text-sm font-semibold text-white">
+                  User searches
+                </h3>
+                <p class="mt-2 text-xs text-neutral-400">
+                  The user filters cars by brand, city and price to find the
+                  right options.
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col items-start rounded-2xl border border-white/10 bg-black/60 p-5 shadow-lg shadow-black/60"
+              >
+                <span
+                  class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-red-600/90 text-xs font-semibold"
+                  >2</span
+                >
+                <h3 class="text-sm font-semibold text-white">
+                  Selects a car
+                </h3>
+                <p class="mt-2 text-xs text-neutral-400">
+                  From the featured or full list, the user opens a car detail
+                  page.
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col items-start rounded-2xl border border-white/10 bg-black/60 p-5 shadow-lg shadow-black/60"
+              >
+                <span
+                  class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-red-600/90 text-xs font-semibold"
+                  >3</span
+                >
+                <h3 class="text-sm font-semibold text-white">
+                  Sends a request
+                </h3>
+                <p class="mt-2 text-xs text-neutral-400">
+                  They submit a purchase request form مباشرة عبر النظام with
+                  their details.
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col items-start rounded-2xl border border-white/10 bg-black/60 p-5 shadow-lg shadow-black/60"
+              >
+                <span
+                  class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-red-600/90 text-xs font-semibold"
+                  >4</span
+                >
+                <h3 class="text-sm font-semibold text-white">
+                  Admin approves
+                </h3>
+                <p class="mt-2 text-xs text-neutral-400">
+                  The admin reviews the request, contacts the buyer, and
+                  finalizes the deal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="border-t border-white/10 bg-black">
+        <div class="mx-auto max-w-6xl px-4 py-8 lg:px-0">
+          <div
+            class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between"
+          >
+            <div>
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex h-8 w-8 items-center justify-center rounded-full bg-red-600 text-xs font-bold shadow-md shadow-red-600/40"
+                >
+                  CM
+                </span>
+                <div class="flex flex-col">
+                  <span class="text-sm font-semibold tracking-wide uppercase"
+                    >Car Market</span
+                  >
+                  <span class="text-xs text-neutral-400"
+                    >Modern Car Marketplace</span
+                  >
+                </div>
+              </div>
+              <p class="mt-3 max-w-md text-xs text-neutral-400">
+                A clean, professional platform to discover, compare and request
+                cars بسهولة, with a simple flow from search to admin approval.
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col gap-4 text-sm text-neutral-300 sm:flex-row sm:items-center"
+            >
+              <nav class="flex gap-4 text-xs sm:text-sm">
+                <a href="#" class="hover:text-white">Home</a>
+                <a href="/cars" class="hover:text-white">Cars</a>
+                <a href="/contact" class="hover:text-white">Contact</a>
+              </nav>
+
+              <div class="flex flex-col gap-2 text-xs text-neutral-400">
+                <span class="font-semibold text-neutral-300">
+                  Contact
+                </span>
+                <span>Email: info@carmarket.app</span>
+                <span>Phone: +1 (555) 123‑4567</span>
+              </div>
+
+              <div class="flex flex-col gap-2 text-xs text-neutral-400">
+                <span class="font-semibold text-neutral-300">
+                  Follow us
+                </span>
+                <div class="flex gap-3">
+                  <a
+                    href="#"
+                    class="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/15 text-[11px] hover:border-red-500 hover:text-red-400"
+                    aria-label="Visit our Facebook"
+                    >Fb</a
+                  >
+                  <a
+                    href="#"
+                    class="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/15 text-[11px] hover:border-red-500 hover:text-red-400"
+                    aria-label="Visit our Instagram"
+                    >Ig</a
+                  >
+                  <a
+                    href="#"
+                    class="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/15 text-[11px] hover:border-red-500 hover:text-red-400"
+                    aria-label="Visit our Twitter"
+                    >X</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-6 flex flex-col gap-2 border-t border-white/10 pt-4 text-[11px] text-neutral-500 sm:flex-row sm:items-center sm:justify-between"
+          >
+            <span>
+              ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Car Market. All rights reserved.
+            </span>
+            <span>Built with Tailwind CSS • Red · Black · White theme</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,23 @@
+<svg width="450" height="100" viewBox="0 0 450 100" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+  <rect width="450" height="100" fill="#ffffff" rx="12" />
+    <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&amp;display=swap');
+      .text-auto { font-family: 'Outfit', system-ui, sans-serif; font-weight: 800; font-size: 52px; fill: #0f172a; letter-spacing: -1px; }
+      .text-market { font-family: 'Outfit', system-ui, sans-serif; font-weight: 800; font-size: 52px; fill: #dc2626; letter-spacing: -1px; }
+    </style>
+    <linearGradient id="carGradient" x1="20" y1="40" x2="180" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dc2626" />
+      <stop offset="1" stop-color="#991b1b" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 10)">
+      <g fill="none" stroke="url(#carGradient)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 45 46 C 65 15, 105 15, 135 45" />
+    <path d="M 25 50 Q 80 35, 175 52" />
+    <path d="M 25 65 L 40 65 A 15 15 0 0 1 70 65 L 120 65 A 15 15 0 0 1 150 65 L 165 65" />
+    <path d="M 75 57 Q 100 53, 125 57" stroke-width="3" />
+  </g>
+  </g>
+  <text x="200" y="66" class="text-auto">Auto<tspan class="text-market">Market</tspan></text>
+</svg>
