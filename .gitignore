@@ -37,6 +37,15 @@ car-market-backend/bootstrap/cache/
 car-market-frontend/node_modules/
 car-market-frontend/dist/
 
+# ── Dev-only scripts & internal docs (not for repo) ─────────────────
+validate_v2_integration.js
+validate.err.log
+validate.out.log
+CAR_PERMISSIONS_FIXED.md
+PERMISSION_SYSTEM_VERIFICATION.md
+V2_INTEGRATION_REPORT.md
+DEPLOYMENT_GUIDE.md
+
 # ── OS / editor artifacts ────────────────────────────────────────────
 .DS_Store
 Thumbs.db
